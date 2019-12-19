@@ -69,7 +69,11 @@ app.use(function (req, res) {
     res.status(500);
     res.send('500 - Server Error');
 })
- 
+app.use(function (err, req, res, next) {
+	res.type('text/html');
+	res.status(500);
+	res.send('500');
+});
 app.listen(app.get('port'), function () {
     console.log('Express started on http://localhost:' + app.get('port') + ';');
 })

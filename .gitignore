@@ -1,0 +1,10 @@
+# 忽视node包
+node_modules
+# 忽视备份文件
+*~
+# 忽视OSX系统下的.DS_Store文件
+.DS_Store
+#忽略第三放凭证文件
+credentials.js
+# 忽略SSL目录
+ssl
