@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.sidebar a {
+    text-decoration: none;
+}
+.site-inner {
+    padding: 0 10%;
+}
+.site-inner > h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+.intro-title {
+    width: 60vw;
+    margin: 0 auto;
+    height: 58px;
+    background: black;
+    color: white;
+    position: relative;
+    top: 29px;
+}
+.intro-title > h4 {
+    line-height: 58px;
+    text-align: center;
+    font-weight: 100;
+}
+.intro-container {
+    border: 1px solid;
+    text-align: center;
+}
+.self-pic {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.self-pic > img {
+    max-width: 75%;
+}
+.about-me {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.about-me > a {
+    display: block;
+}
+.weibo-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.weibo-header > .weibo-byline {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.weibo-byline > a {
+    color: slateblue;
+}
+/* 为blog组件配置的样式表 */
+.weibo-item {
+    margin: 0 10vw;
+    padding: 5px 0;
+    border-top: 1px solid lightgray;
+    letter-spacing: 1px;
+}
+.weibo-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weibo-logo > a {
+    background: url('../images/home/weibo_logo_small.jpg');
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+}
+.weibo-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.author-info {
+    padding: 6px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.author-name {
+    display: block;
+    text-align: left;
+}
+.author-nickname {
+    color: gray;
+}
+.author-avatar > img {
+    width: 35px;
+    height: 35px;
+}
+.weibo-text {
+    text-align: justify;
+}
+.weibo-text a {
+    color: slateblue;
+}
+.weibo-timeline {
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: right;
+    color: #667580;
+}
+/* 桌面设备样式表 */
+@media (min-width: 768px) {
+    .site-inner {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    main {
+        max-width: 60%;
+    }
+    .sidebar {
+        max-width: 30%;
+    }
+    .intro-title {
+        width: 75%;
+    }
+    .weibo-item {
+        margin: 0 10%;
+    }
+}

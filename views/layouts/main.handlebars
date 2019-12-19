@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to visit Cris Ma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+        crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    {{!-- 这是视图母版，其中{{body}}}表达式会被不同的视图取代 --}}
+    <div class="site-container container-fluid">
+        <header class="site-header">
+            <div class="logo logo-small logo-turn">
+                <div class="title-area">
+                    <div class="title">
+                        <div class="title-name">Cris</div> 
+                        <div class="title-name">Ma</div> 
+                    </div>
+                </div>
+                <div class="title-area-back"></div>
+            </div> 
+            <div class="navigation-container panel-group" id="nav-accordin">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#nav-body" class="accordin-toggole" data-toggle="collapse" 
+                        data-parent="#nav-accordin"><span class="icon-menu"></span></a>
+                    </div>
+                    <div class="panel-collapse collapse" id="nav-body">
+                        <div class="panel-body">
+                            <nav class="navbar navbar-default">
+                                <ul class="nav nav-line">
+                                    <li class="active" role="presentation"><a href=""><span>HOME</span></a></li>
+                                    <li role="presentation"><a href=""><span>PROFILE</span></a></li>
+                                    <li role="presentation"><a href=""><span>HOBBY</span></a></li>
+                                    <li role="presentation"><a href=""><span>others</span></a></li>
+                                </ul>
+                            </nav>  
+                        </div>     
+                    </div> 
+                </div>
+            </div>
+            <div class="navigation-container" id="nav-noaccordin">
+                <nav class="navbar">
+                    <ul class="nav nav-line">
+                        <li class="active" role="presentation"><a href=""><span>HOME</span></a></li>
+                        <li role="presentation"><a href=""><span>PROFILE</span></a></li>
+                        <li class="logo logo-large">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="title-name">Cris</div> 
+                                    <div class="title-name">Ma</div>
+                                </div>
+                            </div>
+                            <div class="title-area-back"></div>
+                        </li>
+                        <li class="logo-back"></li>
+                        <li role="presentation"><a href=""><span>HOBBY</span></a></li>
+                        <li role="presentation"><a href=""><span>others</span></a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        {{{body}}}
+    </div>
+    <footer class="site-footer">
+        <div class="footer-text">&copy; Copyright 2019 Cris Ma</div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

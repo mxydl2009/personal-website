@@ -1,0 +1,35 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "a personal website built by using node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sh scripts/watch.sh",
+    "startdev": "npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mxydl2009/personal-website.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "mxy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxydl2009/personal-website/issues"
+  },
+  "homepage": "https://github.com/mxydl2009/personal-website#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

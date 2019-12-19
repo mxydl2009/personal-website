@@ -1,0 +1,33 @@
+<div class="weibo-item">
+    <div class="weibo-item-header">
+        <div class="weibo-author">
+            <a href="https://weibo.com/u/2524789911" class="author-avatar">
+                <img src="images/home/author_avatar.jpg" class="img-circle" alt="微博头像">
+            </a>
+            <div class="author-info">
+                <a href="https://weibo.com/u/2524789911">
+                    <div>
+                        <span class="author-name">马兴原</span>
+                        <span class="author-name author-nickname">@原头笨脑</span>
+                    </div>
+                </a>
+            </div>
+        </div>        
+        <div class="weibo-logo">
+            <a href="https://weibo.com/" title="新浪微博"></a>
+        </div>
+    </div>
+    <div class="weibo-content">
+        <div class="weibo-text">
+            <div>
+                {{text}}
+            </div>
+            {{#if retweeted_status}}
+            <div>
+                <span>{{retweeted_status.text}}</span><a href="{{link}}"><span class="glyphicon glyphicon-paperclip"></span>网页链接</a>
+            </div>
+            {{/if}}
+        </div>
+        <div class="weibo-timeline"><span>{{created_at}}</span></div>
+    </div>
+</div>
