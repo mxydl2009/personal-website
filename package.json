@@ -25,7 +25,7 @@
   "homepage": "https://github.com/mxydl2009/personal-website#readme",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "jquery": "^1.9.1",
     "popper.js": "^1.16.0"
